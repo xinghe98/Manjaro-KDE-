@@ -87,8 +87,8 @@ chmod +x ./kcp.sh
 - ### 安装输入法
 
   ``` shell
-  sudo pacman -S fcitx-im             * # 全部安装 *
-  sudo pacman -S fcitx-configtool     * # 图形化配置工具 *
+  sudo pacman -S fcitx-im             # 全部安装 
+  sudo pacman -S fcitx-configtool     # 图形化配置工具 
   sudo pacman -S fcitx-googlepinyin
   sudo pacman -Sy fcitx-cloudpinyin
   ```
@@ -104,7 +104,7 @@ chmod +x ./kcp.sh
 
 - ### 终极效果展示
 
-<img src="https://raw.githubusercontent.com/xinghe98/Manjaro-KDE-/master/2020-03-28_12-35.png?token=ALHKKAFDSPCC7DM4LCH4ZES6P4ESC" alt="show" style="zoom:75%;" />
+<img src="https://github.com/xinghe98/Manjaro-KDE-/blob/master/2020-03-28_12-35.png" alt="show" style="zoom:75%;" />
 
 - ### 我的主题
 
