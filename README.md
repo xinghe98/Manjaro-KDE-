@@ -11,7 +11,9 @@ sudo vi /etc/pacman.conf
 #### 加入以下内容：
 
 > [archlinuxcn] 
-> SigLevel = Never 
+> 
+> SigLevel = Never
+>
 > Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 
 #### 换为国内源：
