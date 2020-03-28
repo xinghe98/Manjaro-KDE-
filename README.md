@@ -73,6 +73,7 @@ vi kcp.sh
 加入以下内容：
 
 > \#!/bin/bash 
+>
 > nohup Documents/kcptun/client_linux_amd64 -c Documents/kcptun/kcp.json > dev/null 2 >&1 &
 
 为其添加可执行权限：
@@ -94,16 +95,16 @@ chmod +x ./kcp.sh
 
   将以下内容写入~/.xprofile后重启：
 
-> export LC_ALL=zh_CN.UTF-8
-> export GTK_IM_MODULE=fcitx
-> export QT_IM_MODULE=fcitx
+> export LC_ALL=zh_CN.UTF-8<br/>
+> export GTK_IM_MODULE=fcitx<br/>
+> export QT_IM_MODULE=fcitx<br/>
 > export XMODIFIERS="@im=fcitx"
 
 ## 主题美化
 
 - ### 终极效果展示
 
-<img src="file:///home/xinghe/Desktop/2020-03-28_12-35.png" alt="show" style="zoom:75%;" />
+<img src="https://raw.githubusercontent.com/xinghe98/Manjaro-KDE-/master/2020-03-28_12-35.png?token=ALHKKAFDSPCC7DM4LCH4ZES6P4ESC" alt="show" style="zoom:75%;" />
 
 - ### 我的主题
 
@@ -221,9 +222,10 @@ pip install pynvim jedi
 ## 磁盘清理
 
 ```shell
-    sudo pacman -Scc
-    journalctl --disk-usage
-    sudo rm /var/lib/systemd/coredump/*
+    sudo pacman -Scc #清理无用包
+    journalctl --disk-usage #查看日志文件
+    sudo journalctl --vacuum-size=50M #删除指定大小日志文件
+    sudo rm /var/lib/systemd/coredump/* #删除崩溃日志
 ```
 
 ### 说明：
