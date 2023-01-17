@@ -156,7 +156,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo pacman -S python-pip go nodejs npm yarn
 ```
 
-<++>
 - 下载neovim
 ```shell
 sudo pacman -S neovim
